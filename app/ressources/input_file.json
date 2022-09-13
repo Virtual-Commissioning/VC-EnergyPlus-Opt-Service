@@ -1,0 +1,7 @@
+{
+    "source_file": "app/ressources/benchmark.idf", 
+    "type_of_object": "Material", 
+    "name_of_object": "All",
+    "parameter_to_optimise": "Thickness",
+    "list_of_inputs": [0.25, 0.3222]
+}
