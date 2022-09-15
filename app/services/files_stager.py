@@ -60,9 +60,8 @@ def make_optimisation_on_all_components(type_of_object, all_objects, list_of_inp
 
 
 def files_staging_algorithm(source_file, type_of_object, name_of_object, parameter_to_optimise, list_of_inputs):
-    idf_file_path = "app/ressources/benchmark.idf"
     IDF.setiddname("app/ressources/V9-6-0-Energy+.idd")
-    idf_benchmark = IDF(idf_file_path)
+    idf_benchmark = IDF(source_file)
     
     all_objects = idf_benchmark.idfobjects[type_of_object]
 
