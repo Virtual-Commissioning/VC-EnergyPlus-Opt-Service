@@ -21,8 +21,8 @@ def dispatch_files(directory_of_files_to_simulate, endpoint_url):
         r = requests.post(url = endpoint_url, data = json_to_send)
         
         ##Figure out way to get the data from the response
-        
-        result_file = json.loads(r)
+
+        result_file = json.loads(r.content)
         csv_file = result_file["result_file"]
 
         with open(f"app/temp/{file.name}.csv", 'w') as f:
